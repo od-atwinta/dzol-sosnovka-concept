@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140">
+  <rect x="8" y="8" width="124" height="124" rx="28" fill="#0D4B36"/>
+  <g transform="translate(70 72) scale(0.72)">
+    <path d="M0 -56 L-28 -8 H-16 L-40 30 H-18 L-46 74 H46 L18 30 H40 L16 -8 H28 Z" fill="#FFFDF4"/>
+    <rect x="-6" y="74" width="12" height="20" fill="#FFFDF4"/>
+  </g>
+  <circle cx="112" cy="28" r="6" fill="#E31E24"/>
+
+  <text x="158" y="76" font-family="Unbounded, sans-serif" font-size="46" font-weight="700" fill="#0D4B36" letter-spacing="-0.5">Сосновка</text>
+  <text x="160" y="102" font-family="Unbounded, sans-serif" font-size="13" font-weight="600" fill="#8A9A86" letter-spacing="2.5">ДЕТСКИЙ ЛАГЕРЬ · С 1957 ГОДА</text>
+</svg>
