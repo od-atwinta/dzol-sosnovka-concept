@@ -216,6 +216,7 @@ document.querySelectorAll('[data-accordion] details').forEach(item=>{
 
 const modal=document.querySelector('[data-contact-modal]');
 document.querySelector('[data-contact-open]')?.addEventListener('click',()=>modal?.showModal());
+document.querySelector('[data-contact-close]')?.addEventListener('click',()=>modal?.close());
 modal?.addEventListener('click',event=>{if(event.target===modal)modal.close()});
 document.querySelector('[data-contact-form]')?.addEventListener('submit',event=>{
   if(event.submitter?.value==='cancel')return;
