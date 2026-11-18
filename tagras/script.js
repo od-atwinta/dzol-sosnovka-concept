@@ -89,21 +89,29 @@ document.querySelectorAll('.dancing-title').forEach(title=>{
 
 if(hero&&heroConstructorArea&&fleeingCubes.length&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
   let repelFrame=0;
+  let cubeOrigins=[];
+  const captureCubeOrigins=()=>{
+    cubeOrigins=fleeingCubes.map(cube=>{
+      const rect=cube.getBoundingClientRect();
+      return {centerX:rect.left+rect.width/2,centerY:rect.top+rect.height/2};
+    });
+  };
   const resetCubes=()=>{
     hero.classList.remove('is-repelling');
+    cubeOrigins=[];
     fleeingCubes.forEach(cube=>{
       cube.style.setProperty('--escape-x','0px');
       cube.style.setProperty('--escape-y','0px');
     });
   };
+  heroConstructorArea.addEventListener('pointerenter',captureCubeOrigins);
   heroConstructorArea.addEventListener('pointermove',event=>{
     cancelAnimationFrame(repelFrame);
     repelFrame=requestAnimationFrame(()=>{
+      if(!cubeOrigins.length)captureCubeOrigins();
       hero.classList.add('is-repelling');
       fleeingCubes.forEach((cube,index)=>{
-        const rect=cube.getBoundingClientRect();
-        const centerX=rect.left+rect.width/2;
-        const centerY=rect.top+rect.height/2;
+        const {centerX,centerY}=cubeOrigins[index];
         const deltaX=centerX-event.clientX;
         const deltaY=centerY-event.clientY;
         const distance=Math.max(1,Math.hypot(deltaX,deltaY));
@@ -124,6 +132,7 @@ if(hero&&heroConstructorArea&&fleeingCubes.length&&!matchMedia('(prefers-reduced
   });
   heroConstructorArea.addEventListener('pointerleave',resetCubes);
   header?.addEventListener('pointerenter',resetCubes);
+  window.addEventListener('resize',resetCubes,{passive:true});
   window.addEventListener('blur',resetCubes);
 }
 
