@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Дизайн-концепция главной страницы ДЗОЛ Сосновка в стилистике ТАГРАС">
+  <title>ДЗОЛ Сосновка - детский конструктор ТАГРАС</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-ball" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M8 20c8 2 15 8 18 21M40 18c-8 2-15 8-18 22M16 8c4 7 11 11 22 12"/></symbol>
+    <symbol id="i-car" viewBox="0 0 48 48"><path d="M8 29h32v8H8zM13 29l5-10h13l7 10"/><circle cx="15" cy="38" r="4"/><circle cx="34" cy="38" r="4"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 48 48"><path d="M24 5 12 22h8L9 36h30L28 22h8zM24 36v8"/></symbol>
+    <symbol id="i-star" viewBox="0 0 48 48"><path d="m24 5 5.5 11.5L42 18l-9 8.8L35.5 40 24 33.5 12.5 40 15 26.8 6 18l12.5-1.5z"/></symbol>
+    <symbol id="i-kite" viewBox="0 0 48 48"><path d="m24 5 15 15-15 13L9 20zM24 5v28M9 20h30M24 33c0 8 10 5 10 11"/></symbol>
+    <symbol id="i-paint" viewBox="0 0 48 48"><path d="M12 36 32 16l6 6-20 20H9zM29 13l5-5 6 6-5 5"/><path d="m12 36 6 6"/></symbol>
+    <symbol id="i-teddy" viewBox="0 0 48 48"><circle cx="14" cy="13" r="6"/><circle cx="34" cy="13" r="6"/><circle cx="24" cy="22" r="15"/><circle cx="19" cy="20" r="1"/><circle cx="29" cy="20" r="1"/><path d="M20 27c3 3 5 3 8 0M13 34l-4 9M35 34l4 9M19 36v8M29 36v8"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 48 48"><path d="M24 43c-9 0-15-6-15-14 0-7 5-10 8-16 2 6 6 6 7 10 2-7 7-10 6-18 8 7 10 15 8 23-1 9-7 15-14 15Z"/><path d="M24 41c-4 0-7-3-7-7 0-3 3-5 5-9 1 4 5 5 7 9 1 4-1 7-5 7Z"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 48 48"><path d="m31 7 10 10-21 21-10 2 2-10zM27 11l10 10"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 48 48"><path d="M7 16h9l3-5h11l3 5h8v25H7z"/><circle cx="24" cy="28" r="8"/></symbol>
+    <symbol id="i-tent" viewBox="0 0 48 48"><path d="M24 6 5 41h38zM24 6v35M24 41l8-14"/></symbol>
+    <symbol id="i-music" viewBox="0 0 48 48"><path d="M19 10v25M38 6v25M19 14l19-5"/><circle cx="13" cy="36" r="6"/><circle cx="32" cy="32" r="6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+  </svg>
+
+  <div class="background-toys" aria-hidden="true">
+    <svg class="toy toy-a"><use href="#i-ball"/></svg><svg class="toy toy-b"><use href="#i-car"/></svg>
+    <svg class="toy toy-c"><use href="#i-tree"/></svg><svg class="toy toy-d"><use href="#i-star"/></svg>
+    <svg class="toy toy-e"><use href="#i-kite"/></svg><svg class="toy toy-f"><use href="#i-teddy"/></svg>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <img src="assets/logo-sosnovka-concept.svg" alt="Сосновка - детский загородный оздоровительный лагерь">
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация" data-nav>
+        <div class="nav-item has-dropdown">
+          <div class="nav-item-head"><a href="#about">О лагере</a><button class="nav-toggle" type="button" aria-label="Открыть подразделы О лагере" aria-expanded="false"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></button></div>
+          <div class="nav-dropdown">
+            <a href="#about"><b>О лагере</b><span>Территория, история и атмосфера</span></a>
+            <a href="#"><b>История</b><span>Как появилась Сосновка</span></a>
+            <a href="#"><b>Команда</b><span>Руководство и вожатые</span></a>
+            <a href="#"><b>Безопасность</b><span>Медицина и сопровождение</span></a>
+            <a href="#gallery"><b>Инфраструктура</b><span>Корпуса и площадки</span></a>
+            <a href="#"><b>Документы</b><span>Основные сведения</span></a>
+          </div>
+        </div>
+        <a class="nav-direct" href="#shifts">Смены</a>
+        <div class="nav-item has-dropdown">
+          <div class="nav-item-head"><a href="#parents">Родителям</a><button class="nav-toggle" type="button" aria-label="Открыть подразделы Родителям" aria-expanded="false"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></button></div>
+          <div class="nav-dropdown nav-dropdown-right">
+            <a href="#parents"><b>Как купить путевку</b><span>От выбора смены до оплаты</span></a>
+            <a href="#"><b>Что взять с собой</b><span>Список вещей для поездки</span></a>
+            <a href="#"><b>Правила</b><span>Распорядок и требования</span></a>
+            <a href="#"><b>Документы к заезду</b><span>Справки и согласия</span></a>
+            <a href="#"><b>Вопросы и ответы</b><span>Коротко о главном</span></a>
+            <a href="#"><b>Личный кабинет</b><span>Заявки, оплата и анкета</span></a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <div class="nav-item-head"><a href="#gallery">Жизнь в лагере</a><button class="nav-toggle" type="button" aria-label="Открыть подразделы Жизнь в лагере" aria-expanded="false"><svg viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg></button></div>
+          <div class="nav-dropdown nav-dropdown-right nav-dropdown-compact">
+            <a href="#gallery"><b>Фотогалерея</b><span>События каждого дня</span></a>
+            <a href="#"><b>Новости</b><span>Что происходит в Сосновке</span></a>
+            <a href="#"><b>Отзывы</b><span>Истории детей и родителей</span></a>
+            <a href="#"><b>Традиции</b><span>То, что объединяет поколения</span></a>
+          </div>
+        </div>
+        <a class="nav-direct" href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="access-button" type="button" aria-label="Версия для слабовидящих">
+          <svg viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+        <a class="button button-red header-book" href="#" data-booking-open><span>Забронировать</span><svg><use href="#i-arrow"/></svg></a>
+        <button class="menu-button" type="button" aria-label="Открыть меню" data-menu><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Дети бегут по солнечному сосновому лесу"></div>
+      <div class="hero-overlay"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <div class="hero-label"><i></i> Лето в сосновом бору</div>
+          <h1 class="dancing-title">Каникулы,<span class="hero-subline">которые запомнятся</span></h1>
+          <p>Сосновый лес, новые друзья и целое лето для открытий<br>Для детей от 6 до 17 лет</p>
+          <a class="button button-red hero-button" href="#" data-booking-open><span>Забронировать</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="hero-constructor" aria-hidden="true">
+          <svg class="constructor-svg" viewBox="0 0 520 520">
+            <g class="cube cube-1" transform="translate(62 80)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/><path class="cube-icon" d="M38 95c18-19 45-22 64-6M46 110c17-11 34-13 53-5"/></g>
+            <g class="cube cube-2" transform="translate(202 18) scale(.82)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/><circle class="cube-dot" cx="70" cy="108" r="18"/></g>
+            <g class="cube cube-3" transform="translate(275 112) scale(1.08)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/><path class="cube-icon" d="m70 91 7 14 16 2-12 11 4 16-15-8-15 8 4-16-12-11 16-2Z"/></g>
+            <g class="cube cube-4" transform="translate(104 232) scale(1.05)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/><path class="cube-icon" d="M53 132V90m34 42V84M53 98l34-9"/></g>
+            <g class="cube cube-5" transform="translate(245 285) scale(.86)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/><path class="cube-icon" d="M70 87 46 119h16l-13 20h43l-13-20h16Z"/></g>
+            <g class="cube cube-6" transform="translate(352 250) scale(.62)"><path class="top" d="M70 0 140 38 70 76 0 38Z"/><path class="left" d="M0 38 70 76v78L0 116Z"/><path class="right" d="M140 38 70 76v78l70-38Z"/></g>
+            <path class="orbit" d="M34 350c95 104 302 135 446 14"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-marquee" aria-hidden="true"><div>Дружба <i></i> Творчество <i></i> Спорт <i></i> Большое лето <i></i> Сосны <i></i> Новые открытия <i></i> Дружба <i></i> Творчество <i></i> Спорт <i></i></div></div>
+    </section>
+
+    <section class="facts section-space" aria-label="Ключевые преимущества">
+      <div class="shell facts-grid">
+        <article class="fact fact-red"><strong>24/7</strong><span>вожатые и педагоги рядом круглосуточно</span><svg><use href="#i-star"/></svg></article>
+        <article class="fact fact-photo"><img src="assets/safety-supervision.png" alt="Дети и вожатый на территории лагеря"><span>Забота в каждом дне</span></article>
+        <article class="fact fact-teal"><strong>69</strong><span>лет растим мечты и дружбу в сосновом бору</span><svg><use href="#i-tree"/></svg></article>
+      </div>
+    </section>
+
+    <section class="shifts section-space" id="shifts">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="eyebrow">Лето в Сосновке</span><h2>Выбери свою смену</h2></div>
+          <p>У каждой смены своя легенда, программа и команда. Даты в концепции предварительные и требуют подтверждения</p>
+        </div>
+        <div class="shift-list" data-shifts>
+          <article class="shift-row" data-preview="assets/shift-01-craft.png"><span class="shift-number">01</span><strong>Территория творчества</strong><span>Мастерские, музыка и новые идеи</span><em>1-21 июня</em><button class="shift-book-button" type="button" data-booking-shift="Территория творчества - 1-21 июня">Забронировать</button></article>
+          <article class="shift-row" data-preview="assets/shift-02-volleyball.png"><span class="shift-number">02</span><strong>Энергия команды</strong><span>Спорт, игры и личные победы</span><em>24 июня-14 июля</em><button class="shift-book-button" type="button" data-booking-shift="Энергия команды - 24 июня-14 июля">Забронировать</button></article>
+          <article class="shift-row shift-row-sold" data-preview="assets/shift-03-theatre.png"><span class="shift-number">03</span><strong>Сцена открытий</strong><span>Театр, выступления и уверенность</span><em>17 июля-6 августа</em><span class="shift-sold-out">Места закончились</span></article>
+          <article class="shift-row" data-preview="assets/shift-04-campfire.png"><span class="shift-number">04</span><strong>Большое лето</strong><span>Костры, приключения и друзья</span><em>9-29 августа</em><button class="shift-book-button" type="button" data-booking-shift="Большое лето - 9-29 августа">Забронировать</button></article>
+          <div class="shift-preview" data-shift-preview><img src="assets/shift-01-craft.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-space" id="about">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">Каждый день разный</span>
+          <h2>Место, где всегда есть чем заняться</h2>
+          <p>Сосновый бор становится частью каждого дня. Утром дети идут на занятия, днем играют и занимаются спортом, вечером собираются на концерты и отрядные события</p>
+          <a class="text-link" href="#gallery">Посмотреть жизнь лагеря <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="photo-pattern" aria-label="Фотографии жизни лагеря">
+          <figure class="pattern-cell cell-a"><img src="assets/sport-concept.png" alt="Спортивные занятия в лагере"></figure>
+          <figure class="pattern-cell cell-b"><img src="assets/workshop-concept.png" alt="Творческая мастерская"></figure>
+          <div class="pattern-cell cell-color"><svg><use href="#i-ball"/></svg><b>Играй</b></div>
+          <figure class="pattern-cell cell-c"><img src="assets/evening-concept.png" alt="Вечернее событие"></figure>
+          <div class="pattern-cell cell-mark"><svg><use href="#i-paint"/></svg><b>Твори</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section-space" id="values">
+      <div class="shell values-grid">
+        <div class="shape-playground" data-shape-playground data-current-shape="scatter" aria-label="Кубики собираются в детские фигуры">
+          <div class="shape-stage">
+            <span class="shape-cube"><svg><use href="#i-star"/></svg></span><span class="shape-cube"><svg><use href="#i-kite"/></svg></span><span class="shape-cube"><svg><use href="#i-tree"/></svg></span><span class="shape-cube"><svg><use href="#i-ball"/></svg></span>
+            <span class="shape-cube"><svg><use href="#i-teddy"/></svg></span><span class="shape-cube"><svg><use href="#i-camera"/></svg></span><span class="shape-cube"><svg><use href="#i-paint"/></svg></span><span class="shape-cube"><svg><use href="#i-car"/></svg></span>
+            <span class="shape-cube"><svg><use href="#i-music"/></svg></span><span class="shape-cube"><svg><use href="#i-brush"/></svg></span><span class="shape-cube"><svg><use href="#i-fire"/></svg></span><span class="shape-cube"><svg><use href="#i-tent"/></svg></span>
+            <span class="shape-cube"><svg><use href="#i-star"/></svg></span><span class="shape-cube"><svg><use href="#i-ball"/></svg></span><span class="shape-cube"><svg><use href="#i-kite"/></svg></span><span class="shape-cube"><svg><use href="#i-tree"/></svg></span>
+            <span class="shape-cube"><svg><use href="#i-car"/></svg></span><span class="shape-cube"><svg><use href="#i-music"/></svg></span><span class="shape-cube"><svg><use href="#i-teddy"/></svg></span><span class="shape-cube"><svg><use href="#i-camera"/></svg></span>
+            <span class="shape-cube"><svg><use href="#i-paint"/></svg></span><span class="shape-cube"><svg><use href="#i-fire"/></svg></span><span class="shape-cube"><svg><use href="#i-brush"/></svg></span><span class="shape-cube"><svg><use href="#i-tent"/></svg></span>
+          </div>
+        </div>
+        <div class="values-copy">
+          <span class="eyebrow eyebrow-light">Собираем характер</span>
+          <h2>Большая история из маленьких открытий</h2>
+          <p>Каждый день складывается из новых навыков, командных решений и моментов, которые хочется запомнить</p>
+          <div class="values-list">
+            <div><b>Дружба</b><span>Учимся слышать друг друга и быть командой</span></div>
+            <div><b>Самостоятельность</b><span>Пробуем, выбираем и отвечаем за решения</span></div>
+            <div><b>Творчество</b><span>Находим собственный способ рассказать о важном</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section section-space" id="gallery">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="eyebrow">Территория лагеря</span><h2>Сосновка на карте</h2></div>
+          <p>Наведите курсор на маячки, чтобы посмотреть основные объекты. Расположение уточняется по плану территории</p>
+        </div>
+        <div class="map-frame">
+          <img src="assets/camp-map-concept.png" alt="Схема территории лагеря Сосновка">
+          <button class="map-pin pin-a" type="button"><i></i><span>Административное здание</span></button>
+          <button class="map-pin pin-b" type="button"><i></i><span>Спортивная площадка</span></button>
+          <button class="map-pin pin-c" type="button"><i></i><span>Площадка для мероприятий</span></button>
+          <div class="map-card"><small>Республика Татарстан</small><strong>ДЗОЛ Сосновка</strong><p>Сосновый бор, спортивные площадки, творческие пространства и места для отдыха</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parents section-space" id="parents">
+      <div class="shell parents-grid">
+        <div class="parents-intro">
+          <span class="eyebrow">Родителям</span>
+          <h2>Все важное до поездки</h2>
+          <p>Документы, правила и ответы собраны в одном месте. Вы заранее понимаете, как подготовиться к смене и что происходит после бронирования</p>
+          <a class="download-guide" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg><span>Скачать памятку</span></a>
+          <div class="parent-figure" aria-hidden="true"><svg><use href="#i-teddy"/></svg><svg><use href="#i-ball"/></svg><svg><use href="#i-tree"/></svg><svg><use href="#i-car"/></svg></div>
+        </div>
+        <div class="accordion" data-accordion>
+          <details open><summary><span>01</span><b>Как купить путевку</b><i></i></summary><div><p>Выберите смену, заполните анкету и подтвердите бронирование. После проверки данных станет доступна оплата</p><a href="#">Подробнее</a></div></details>
+          <details><summary><span>02</span><b>Какие документы нужны</b><i></i></summary><div><p>Список документов и медицинских справок будет доступен в разделе для родителей</p><a href="#">Подробнее</a></div></details>
+          <details><summary><span>03</span><b>Безопасность и медицина</b><i></i></summary><div><p>На территории работают медицинские специалисты, действует контролируемый доступ и круглосуточное сопровождение</p><a href="#">Подробнее</a></div></details>
+          <details><summary><span>04</span><b>Что взять с собой</b><i></i></summary><div><p>Подготовим понятный список одежды, личных вещей и предметов для занятий</p><a href="#">Подробнее</a></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking section-space">
+      <div class="shell booking-card">
+        <div class="booking-copy"><span class="eyebrow eyebrow-light">Путевка в Сосновку</span><h2>Три шага до новых впечатлений</h2><p>Ждем тебя!</p><div class="summer-note"><b>Собираем лето</b><span>из дружбы, игр и открытий</span></div></div>
+        <div class="booking-steps">
+          <div><span>01</span><b>Выбери смену</b></div>
+          <div><span>02</span><b>Заполни анкету</b></div>
+          <div><span>03</span><b>Подтверди бронирование</b></div>
+          <a class="button button-red" href="#" data-booking-open><span>Забронировать место</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="booking-cubes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img src="assets/logo-sosnovka-concept.svg" alt="Сосновка"></div>
+      <nav><a href="#about">О лагере</a><a href="#shifts">Смены</a><a href="#parents">Родителям</a><a href="#gallery">Жизнь в лагере</a><a href="#contacts">Контакты</a></nav>
+      <nav><a href="#">Об организации</a><a href="#">Сведения об организации</a><a href="#">Безопасность</a><a href="#">Документы</a><a href="#">Руководство</a><a href="#">Доступная среда</a></nav>
+      <div class="footer-contact"><a class="footer-phone" href="tel:+79095200030">+7 909 520-00-30</a><p>Республика Татарстан<br>ДЗОЛ Сосновка</p><button class="button button-outline" type="button" data-contact-open><span>Связаться с нами</span><svg><use href="#i-arrow"/></svg></button><a class="social-link" href="https://vk.ru/dzol_sosnovka" target="_blank" rel="noopener">VK - сообщество лагеря</a></div>
+    </div>
+    <div class="shell footer-bottom"><span>ДЗОЛ Сосновка</span><span>Дизайн-концепция главной страницы</span></div>
+  </footer>
+
+  <button class="scroll-top" type="button" aria-label="Наверх" data-scroll-top><svg viewBox="0 0 24 24"><path d="m6 14 6-6 6 6M12 8v10"/></svg></button>
+
+  <dialog class="contact-modal" data-contact-modal>
+    <form method="dialog" class="modal-card" data-contact-form>
+      <button class="modal-close" value="cancel" aria-label="Закрыть">×</button>
+      <span class="eyebrow">Обратная связь</span><h2>Связаться с нами</h2>
+      <label><span>Имя</span><input type="text" required placeholder="Как к вам обращаться"></label>
+      <label><span>Телефон</span><input type="tel" required placeholder="+7 900 000-00-00"></label>
+      <label><span>Сообщение</span><textarea required placeholder="Напишите ваш вопрос"></textarea></label>
+      <label class="consent"><input type="checkbox" required><span>Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой обработки персональных данных</a></span></label>
+      <button class="button button-red modal-submit" value="submit"><span>Отправить</span><svg><use href="#i-arrow"/></svg></button>
+    </form>
+  </dialog>
+
+  <dialog class="booking-modal" data-booking-modal aria-labelledby="booking-title">
+    <form class="booking-form" data-booking-form>
+      <button class="modal-close" type="button" aria-label="Закрыть форму" data-booking-close>×</button>
+      <span class="eyebrow">Заявка на путевку</span>
+      <h2 id="booking-title">Забронировать место</h2>
+      <p class="booking-form-lead">Оставьте данные для связи. Сотрудник лагеря уточнит наличие мест и поможет завершить оформление</p>
+      <div class="booking-fields">
+        <label class="booking-field"><span>Телефон для связи</span><input type="tel" name="phone" autocomplete="tel" required placeholder="+7 900 000-00-00"></label>
+        <label class="booking-field"><span>Смена</span><select name="shift" required data-booking-select><option value="" selected disabled>Выберите смену</option><option>Территория творчества - 1-21 июня</option><option>Энергия команды - 24 июня-14 июля</option><option>Сцена открытий - 17 июля-6 августа</option><option>Большое лето - 9-29 августа</option></select></label>
+        <label class="booking-field"><span>Количество детей</span><input type="number" name="children" min="1" max="10" value="1" required></label>
+        <label class="booking-field"><span>Возраст детей</span><input type="text" name="age" required placeholder="Например: 8 и 12 лет"></label>
+        <label class="booking-field booking-field-wide"><span>Комментарий</span><textarea name="message" placeholder="Напишите вопрос или важную информацию"></textarea></label>
+      </div>
+      <div class="booking-consents">
+        <label><input type="checkbox" name="personal_consent" required><span>Я даю согласие на обработку моих персональных данных на условиях <a href="#">согласия на обработку персональных данных</a> и ознакомлен с <a href="#">политикой обработки персональных данных</a></span></label>
+        <label><input type="checkbox" name="child_consent" required><span>Я подтверждаю, что являюсь законным представителем ребенка, и даю согласие на обработку указанных в заявке сведений о ребенке</span></label>
+        <label><input type="checkbox" name="messages_consent"><span>Я согласен получать информационные сообщения о сменах и программах лагеря</span></label>
+      </div>
+      <p class="booking-success" data-booking-success>Заявка заполнена. В рабочей версии она будет отправлена сотрудникам лагеря</p>
+      <button class="button button-red booking-submit" type="submit"><span>Отправить заявку</span><svg><use href="#i-arrow"/></svg></button>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
